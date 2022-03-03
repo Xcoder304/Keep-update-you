@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root{
+    --black:#323232;
+    --Lblack:#4E4E4E;
+    --white:#fff;
+    --red:#EA0000;
+    --Lwhite:rgb(204, 204, 255)
+    --blue1:rgb(100, 149, 237)
+    --blue2:rgb(64, 224, 208)
+}
+.Black{
+    background: var(--black) !important;
+}
+.ColorBlack{
+    color: var(--black) !important;
+}
+.Lightblack{
+    background: var(--Lblack) !important;
+}
+.ColorLightBlack{
+    color: var(--black) !important;
+}
+.Lightblack{
+    background: var(--Lblack) !important;
+}
+.ColorLightBlack{
+    color: var(--black) !important;
+}
+.Red{
+    background: var(--Lblack) !important;
+}
+.ColorRed{
+    color: var(--red) !important;
+}
+.White{
+    background: #fff !important;
+}
+.ColorWhite{
+    color: #fff !important;
+}
+.Lightwhite{
+    background: var(--Lwhite) !important;
+}
+.ColorLightWhite{
+    color: var(--Lwhite) !important;
+}
+.Blue1{
+    background: var(--blue1) !important;
+}
+.ColorBlue1{
+    color: var(--blue1) !important;
+}
+.Blue2{
+    background: var(--blue2) !important;
+}
+.ColorBlue2{
+    color: var(--blue2) !important;
+}
+
+
+
+
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
