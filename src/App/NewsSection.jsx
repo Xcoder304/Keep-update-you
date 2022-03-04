@@ -2,6 +2,7 @@ import React from 'react'
 import NewsCards from "./components/NewsCardSec"
 
 class NewsSection extends React.Component{
+  // make the for storing all the articals on it
   articles = []
 
   constructor(){
@@ -11,9 +12,9 @@ class NewsSection extends React.Component{
       articles: this.articles,
       pageNum:1,
     }
-
   }
 
+  // fatching the data from api 
   async componentDidMount(){
     let url = `${this.props.CurrentUrl}&page=${this.state.pageNum}&pageSize=${this.props.articalsPerPage}`
     let fatch = await fetch(url)
@@ -25,7 +26,10 @@ class NewsSection extends React.Component{
     })
   }
 
+  // ******** next button *********
   NextPageFun = async () =>{
+    // checking if the next page is available if it is then change the current page to next page
+    // why math.ceil? beause its return the higger value number/intiger
     if(!(this.state.pageNum +1 > Math.ceil(this.state.totalRes/this.state.articalsPerPage))){
       let url = `${this.props.CurrentUrl}&page=${this.state.pageNum + 1}&pageSize=${this.state.articalsPerPage}`
       let fatch = await fetch(url)
@@ -38,6 +42,7 @@ class NewsSection extends React.Component{
     }
     }
 
+  // ******** pervious button *********
   PervPageFun = async () =>{
     let url = `${this.props.CurrentUrl}&page=${this.state.pageNum - 1}&pageSize=${this.state.articalsPerPage}`
     let fatch = await fetch(url)
@@ -56,8 +61,12 @@ class NewsSection extends React.Component{
         <div className="row row-cols-1 row-cols-md-3 g-4 mx-4">
           
         {
+          // map the all data from artical array to get the all articals
           this.state.articles.map((elm)=>{
+            // in api some description are null if the description is null then show this in description
             const FordescriptNull = "there is no description of this news click to view this"
+
+            // in api some images are null if the image is null then show this images
             const ForImageNull = "../images/NoImageFounded2.png"
             
             return (
