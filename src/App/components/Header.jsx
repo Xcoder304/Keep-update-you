@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 class Header extends React.Component{
     render(){
         return(
@@ -14,16 +14,45 @@ class Header extends React.Component{
         <li className="nav-item">
           <a className="nav-link active ColorWhite" aria-current="page" href="#">Home</a>
         </li>
+
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle ColorWhite" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categroys
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item " href="#">Headlines</a></li>
+            <li><Link className="dropdown-item text-capitalize" to='/'>business</Link></li>
             <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item" href="#">Business</a></li>
+
+            <li><Link className="dropdown-item text-capitalize" to='/entertainment'>entertainment</Link></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><Link className="dropdown-item text-capitalize " to='/general'>general</Link></li>
+            <li><hr className="dropdown-divider" /></li>
+
+            <li><Link className="dropdown-item text-capitalize" to='/health'>health</Link></li>
+            <li><hr className="dropdown-divider" /></li>
+
+            <li><Link className="dropdown-item text-capitalize" to='/science'>science</Link></li>
+            <li><hr className="dropdown-divider" /></li>
+            
+            <li><Link className="dropdown-item text-capitalize" to='/sports'>sports</Link></li>
+            <li><hr className="dropdown-divider" /></li>
+
+            <li><Link className="dropdown-item text-capitalize" to='/technology'>technology</Link></li>
+
           </ul>
         </li>
+
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle ColorWhite" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Selete Your Contry
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item  text-uppercase" href="#">Usa</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item  text-uppercase" href="#">india</a></li>
+          </ul>
+        </li>
+
         <li className="nav-item">
           <a className="nav-link ColorWhite" href="#">About Us</a>
         </li>

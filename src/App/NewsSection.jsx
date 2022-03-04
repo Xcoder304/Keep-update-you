@@ -1,22 +1,32 @@
 import React from 'react'
 import NewsCards from "./components/NewsCardSec"
+import PropTypes from 'prop-types'
 
 class NewsSection extends React.Component{
-  // make the for storing all the articals on it
-  articles = []
+  static defaultProps = {
+    Country : "us",
+    articalsPerPage:6,
+    categroy:"business",
+  }
+
+  static propTypes = {
+    Country : PropTypes.string,
+    articalsPerPage: PropTypes.number,
+    categroy: PropTypes.string,
+  }
 
   constructor(){
     super() 
 
     this.state={
-      articles: this.articles,
+      articles: [],
       pageNum:1,
     }
   }
 
   // fatching the data from api 
   async componentDidMount(){
-    let url = `${this.props.CurrentUrl}&page=${this.state.pageNum}&pageSize=${this.props.articalsPerPage}`
+    let url = `${this.props.CurrentUrl}&country=${this.props.Country}&category=${this.props.categroy}&page=${this.state.pageNum}&pageSize=${this.props.articalsPerPage}`
     let fatch = await fetch(url)
     let data =  await fatch.json()
 
@@ -31,7 +41,7 @@ class NewsSection extends React.Component{
     // checking if the next page is available if it is then change the current page to next page
     // why math.ceil? beause its return the higger value number/intiger
     if(!(this.state.pageNum +1 > Math.ceil(this.state.totalRes/this.state.articalsPerPage))){
-      let url = `${this.props.CurrentUrl}&page=${this.state.pageNum + 1}&pageSize=${this.state.articalsPerPage}`
+      let url = `${this.props.CurrentUrl}&country=${this.props.Country}&category=${this.props.categroy}&page=${this.state.pageNum + 1}&pageSize=${this.state.articalsPerPage}`
       let fatch = await fetch(url)
       let data =  await fatch.json()
 
@@ -44,7 +54,7 @@ class NewsSection extends React.Component{
 
   // ******** pervious button *********
   PervPageFun = async () =>{
-    let url = `${this.props.CurrentUrl}&page=${this.state.pageNum - 1}&pageSize=${this.state.articalsPerPage}`
+    let url = `${this.props.CurrentUrl}&country=${this.props.Country}&category=${this.props.categroy}&page=${this.state.pageNum - 1}&pageSize=${this.state.articalsPerPage}`
     let fatch = await fetch(url)
     let data =  await fatch.json()
     this.setState({
@@ -68,9 +78,17 @@ class NewsSection extends React.Component{
 
             // in api some images are null if the image is null then show this images
             const ForImageNull = "../images/NoImageFounded2.png"
-            
+
             return (
-              <NewsCards key={elm.url} title={elm.title.slice(0,40)} description={elm.description ? elm.description.slice(0,90) : FordescriptNull} imageUrl={elm.urlToImage ? elm.urlToImage : ForImageNull} newsUrl={elm.url} Date={elm.publishedAt.slice(0,10)} />
+              <NewsCards 
+                key={elm.url} 
+                title={elm.title.slice(0,40)} 
+                description={elm.description ? elm.description.slice(0,90) : FordescriptNull} 
+                imageUrl={elm.urlToImage ? elm.urlToImage : ForImageNull} 
+                newsUrl={elm.url} 
+                articalDate={elm.publishedAt} 
+                authorName={elm.author ? elm.author.slice(0,18) : "unkown"}
+              />
             
             )
       })}

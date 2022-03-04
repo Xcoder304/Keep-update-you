@@ -76,7 +76,6 @@ button:disabled {
   pointer-events: none;
   cursor: none;
 }
-
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
