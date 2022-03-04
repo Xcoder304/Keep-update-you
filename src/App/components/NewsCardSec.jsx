@@ -2,17 +2,22 @@ import React from 'react'
 
 class NewsCards extends React.Component{
     render(){
+      let {title,description,imageUrl,newsUrl,Date} = this.props
         return(
             <div className="col">
+              <a href={newsUrl} target="_blank" style={{textDecoration:"none"}}>
             <div className="card">
-              <img src="../images/img.png" className="card-img-top" alt="..." />
+              <img src={imageUrl} style={{width:"100%",height:"200px",objectFit:"cover"}} className="card-img-top" alt="..." />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <button className='px-3 py-2 Blue1 ColorWhite border-0 rounded-3'>Read More</button>
+                <h5 className="card-title ColorBlack">{title}...</h5>
+                <p className="card-text text-capitalize ColorLightBlack">{description}...</p>
+                <p className="card-text text-capitalize ColorLightBlack">Date: <span className='ColorBlue1'>{Date}</span></p>
+                <a href={newsUrl} target="_blank"><button className='px-3 py-2 Blue1 ColorWhite border-0 rounded-3'>Read More</button></a>
               </div>
             </div>
-          </div>   
+
+              </a>
+          </div>    
         )
     }
 }

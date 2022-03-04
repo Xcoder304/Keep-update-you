@@ -1,0 +1,84 @@
+{
+    "status": "ok",
+    "totalResults": 37,
+    "articles": [
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Fire at Ukrainian nuclear plant outside perimeter - Reuters",
+            "description": "A fire broke out in a training building outside the largest nuclear power plant in Europe during intense fighting between Russian and Ukrainian forces, Ukraine's state emergency service said on Friday.",
+            "url": "https://www.reuters.com/markets/europe/top-wrap-1-europes-largest-nuclear-power-plant-fire-after-russian-attack-mayor-2022-03-04/",
+            "urlToImage": "https://www.reuters.com/resizer/hXL0MpLls25lPvgiAmYzSgtss8w=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/O6NDGSEAVFPRNG27BFQEZMK23E.jpg",
+            "publishedAt": "2022-03-04T02:32:00Z",
+            "content": "BORODYANKA/LVIV, Ukraine, March 4 (Reuters) - A fire broke out in a training building outside the largest nuclear power plant in Europe during intense fighting between Russian and Ukrainian forces, U… [+3069 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "New York Times"
+            },
+            "author": "Marc Santora, Aurelien Breeden, Shashank Bengali",
+            "title": "Ukraine-Russia: Live Updates and Latest News - The New York Times",
+            "description": "Ukraine said a fire had broken out at a complex containing Europe’s largest nuclear power plant after Russian soldiers fired on the area. Russian troops were gaining ground in critical parts of the south, threatening to cut off Ukraine from Black Sea ports.",
+            "url": "https://www.nytimes.com/live/2022/03/03/world/russia-ukraine",
+            "urlToImage": "https://static01.nyt.com/images/2022/03/03/world/03ukraine-briefing-promo-730pm/03ukraine-briefing-promo-730pm-facebookJumbo.jpg",
+            "publishedAt": "2022-03-04T02:16:00Z",
+            "content": "A fire broke out early Friday morning at a complex in southern Ukraine that is home to Europes largest nuclear power plant, after Russian troops fired on the area, Ukraines foreign minister said.Secu… [+3703 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "ESPN"
+            },
+            "author": "David M. Hale",
+            "title": "Ticket prices soar for Duke basketball coach Mike Krzyzewski's farewell game at Cameron Indoor - ESPN",
+            "description": "Tickets for Duke coach Mike Krzyzewski's farewell game against North Carolina at Cameron Indoor Stadium on Saturday are fetching prices usually reserved for the Super Bowl.",
+            "url": "https://www.espn.com/mens-college-basketball/story/_/id/33415737/ticket-prices-soar-duke-basketball-coach-mike-krzyzewski-farewell-game-cameron-indoor",
+            "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0627%2Fr713238_1296x729_16%2D9.jpg",
+            "publishedAt": "2022-03-04T02:11:35Z",
+            "content": "More than 41 years have passed since Mike Krzyzewski coached his first game at Cameron Indoor Stadium, an uneventful 67-49 Duke win over Stetson on Nov. 29, 1980. Since then, the court, which now bea… [+2591 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Jury acquits only Louisville officer charged in Breonna Taylor raid - Reuters",
+            "description": "A Kentucky jury on Thursday acquitted a white former detective of endangering neighbors of Breonna Taylor during a botched raid that killed the Black woman in her home, clearing law enforcement of all criminal liability in a case that rocked the United States…",
+            "url": "https://www.reuters.com/world/us/louisville-detective-acquitted-breonna-taylor-raid-2022-03-03/",
+            "urlToImage": "https://www.reuters.com/resizer/SCtybmGxAIzER98nd13t6SjtdEQ=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/MLBHCL2MS5LOTCUIFNPKGZYHTM.jpg",
+            "publishedAt": "2022-03-04T01:24:00Z",
+            "content": "March 3 (Reuters) - A Kentucky jury on Thursday acquitted a white former detective of endangering neighbors of Breonna Taylor during a botched raid that killed the Black woman in her home, clearing l… [+4172 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "ADL: Pa. had highest activity of white supremacist propaganda in 2021 - 6abc Philadelphia",
+            "description": "New numbers reveal that in 2021, white supremacist groups distributed propaganda at an historically high rate, with the highest level of activity happening i...",
+            "url": "https://www.youtube.com/watch?v=XGbroteEZLw",
+            "urlToImage": "https://i.ytimg.com/vi/XGbroteEZLw/maxresdefault.jpg",
+            "publishedAt": "2022-03-04T00:39:55Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "bloomberg",
+                "name": "Bloomberg"
+            },
+            "author": null,
+            "title": "Russian Troops Shell Europe's Largest Nuclear Power Station in Ukraine - Bloomberg",
+            "description": null,
+            "url": "https://www.bloomberg.com/tosv2.html?vid=&uuid=a475721e-9b66-11ec-bcee-434c67474541&url=L25ld3MvYXJ0aWNsZXMvMjAyMi0wMy0wMy9saXZlLXVwZGF0ZXMtZml0Y2gtZG93bmdyYWRlcy1ydXNzaWEtcy1jcmVkaXQtcmF0aW5n",
+            "urlToImage": null,
+            "publishedAt": "2022-03-04T00:13:00Z",
+            "content": "To continue, please click the box below to let us know you're not a robot."
+        }
+    ]
+}
