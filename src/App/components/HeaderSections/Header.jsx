@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { CategroyDropDown , CountryDropDown} from './DropDowns'
+
 class Header extends React.Component{
     render(){
         return(
@@ -10,47 +12,25 @@ class Header extends React.Component{
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul className="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
         <li className="nav-item">
-          <a className="nav-link active ColorWhite" aria-current="page" href="#">Home</a>
+          <Link className="nav-link active ColorWhite" aria-current="page" to='/'>Home</Link>
         </li>
 
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle ColorWhite" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categroys
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item text-capitalize" to='/'>business</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-
-            <li><Link className="dropdown-item text-capitalize" to='/entertainment'>entertainment</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-            <li><Link className="dropdown-item text-capitalize " to='/general'>general</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-
-            <li><Link className="dropdown-item text-capitalize" to='/health'>health</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-
-            <li><Link className="dropdown-item text-capitalize" to='/science'>science</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-            
-            <li><Link className="dropdown-item text-capitalize" to='/sports'>sports</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-
-            <li><Link className="dropdown-item text-capitalize" to='/technology'>technology</Link></li>
-
-          </ul>
+          <CategroyDropDown />
         </li>
 
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle ColorWhite" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Selete Your Contry
           </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item  text-uppercase" href="#">Usa</a></li>
-            <li><hr className="dropdown-divider" /></li>
-            <li><a className="dropdown-item  text-uppercase" href="#">india</a></li>
-          </ul>
+          <CountryDropDown />
+
         </li>
 
         <li className="nav-item">
@@ -60,6 +40,7 @@ class Header extends React.Component{
           <a className="nav-link ColorWhite" href="#">Contact Us</a>
         </li>
       </ul>
+
     </div>
   </div>
 </nav>
