@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/SavePoints.txt
 /.pnp
 .pnp.js
 

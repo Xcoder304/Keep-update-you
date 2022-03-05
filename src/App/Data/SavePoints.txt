@@ -1,0 +1,22 @@
+  {/* pagination */}
+  {/* <div className='container d-flex my-5 justify-content-center'>
+    <button disabled={this.state.pageNum < 2} className='px-3 py-2 Blue1 ColorWhite border-0 rounded-3  mx-3' onClick={this.PervPageFun}>Pervious</button> */}
+
+    {/* // why math.ceil? beause its return the higger value number/intiger */}
+    {/* <button disabled={this.state.pageNum +1 > Math.ceil(this.state.totalRes/this.props.articalsPerPage)} className='px-3 py-2 Blue1 ColorWhite border-0 rounded-3' onClick={this.NextPageFun}>Next</button>
+  </div> */}
+
+
+  
+  // // ******** next button *********
+  // NextPageFun = async () =>{
+  //   // checking if the next page is available if it is then change the current page to next page
+  //     this.UpdateThePage()
+  //     this.setState({ pageNum:this.state.pageNum + 1, })
+  //   }
+
+  // // ******** pervious button *********
+  // PervPageFun = async () =>{
+  //   this.UpdateThePage()
+  //   this.setState({ pageNum:this.state.pageNum - 1, })
+  // }
